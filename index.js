@@ -1,4 +1,82 @@
 /**
+ * Viết lại phương thức some
+ */
+
+// Mảng thử
+// const arr = [1, 3, 20, 5];
+
+// Overwrite
+// Array.prototype.some2 = function (callback) {
+//   if (typeof callback !== "function") {
+//     throw new TypeError(`${callback} is not function`);
+//   }
+//   var result = false;
+
+//   var arrLength = this.length;
+//   for (var i = 0; i < arrLength; i++) {
+//     result = callback(this[i], i, this);
+//     if (result === true) {
+//       break;
+//     }
+//   }
+//   return result;
+// };
+
+// Gọi hàm thử
+// var result = arr.some2(function (item, i, arr) {
+//   console.log(item, i, arr);
+//   return item % 2 === 0;
+// });
+// console.log(result);
+
+// Gọi hảm nguyên bản
+// var result = arr.some(function (item, i, arr) {
+//   console.log(item, i, arr);
+//   return item % 2 === 0;
+// });
+
+// console.log(result);
+
+/**
+ * Viết lại phương thức every
+ */
+
+// // Mảng thử
+// const arr = [1, 30, 39, 29, 10, 13];
+
+// // Overwrite
+// Array.prototype.every2 = function (callback) {
+//   if (typeof callback !== "function") {
+//     throw new TypeError(`${callback} is not function`);
+//   }
+//   var result = true;
+
+//   var arrLength = this.length;
+//   for (var i = 0; i < arrLength; i++) {
+//     result = callback(this[i], i, this);
+//     if (result === false) {
+//       break;
+//     }
+//   }
+//   return result;
+// };
+
+// // Gọi hàm thử
+// var result = arr.every2(function (item, i, arr) {
+//   // console.log(item, i, arr);
+//   return item < 30;
+// });
+// console.log(result);
+
+// // Gọi hảm nguyên bản
+// var result = arr.every(function (item, i, arr) {
+//   console.log(item, i, arr);
+//   return item < 30;
+// });
+
+// console.log(result);
+
+/**
  * Viết lại phương thức filter
  */
 
