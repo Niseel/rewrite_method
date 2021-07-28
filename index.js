@@ -1,4 +1,31 @@
-console.log("Hi");
+/**
+ * Viết lại phương thức map
+ */
+
+// var arr = [2, 4, 5, 10];
+
+// Array.prototype.map2 = function (callback) {
+//   if (typeof callback !== "function") {
+//     throw new TypeError(`${callback} is not function`);
+//   }
+
+//   var result = [];
+//   var arrLength = this.length;
+//   for (var i = 0; i < arrLength; i++) {
+//     result.push(callback(this[i], i, this));
+//   }
+//   return result;
+// };
+
+// var result = arr.map2((item) => {
+//   return item + 2;
+// });
+
+// console.log(result);
+
+// var result = arr.map(123);
+
+// console.log(result);
 
 /**
  * Viết lại phương thức reduce
@@ -7,6 +34,9 @@ console.log("Hi");
 // var arr = [2, 4, 5, 10];
 
 // Array.prototype.reduce2 = function (callback, initialValue) {
+//   if (typeof callback !== "function") {
+//     throw new TypeError(`${callback} is not function`);
+//   }
 //   var arrLength = this.length;
 //   var i = 0;
 //   if (initialValue === undefined) {
